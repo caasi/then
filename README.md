@@ -15,9 +15,21 @@ npm install @caasi/then
 You can use it to resolve promises for the inner component:
 
 ```
-<Then name={Promise.resolve('Isaac')}>
-  <Foobar />
-</Then>
+import { Then } from '@caasi/then'
+
+const Foobar = ({ name }) => <span>I am { name }.</span>
+
+class MyComp extends PureComponent {
+  render() {
+    return (
+      <Then name={Promise.resolve('Isaac')}>
+        <Foobar />
+      </Then>
+    )
+  }
+}
+
+export default MyComp
 ```
 
 Then the inner component will get the promised value "Isaac" when the promise is
