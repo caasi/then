@@ -1,7 +1,11 @@
 {
   "name": "@caasi/then",
-  "version": "1.0.2",
-  "description": "A higher-order component for promised props.",
+  "version": "1.1.0",
+  "description": "A `Promise` toolset for asynchronous React apps.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caasi/then"
+  },
   "main": "dist/index.js",
   "scripts": {
     "build": "babel src --out-dir dist",
